@@ -22,5 +22,5 @@ $$
 An inverse transform of the logit-transformed *p* will produce sigmoid logistic curve and it can be expressed as below.
 
 $$
-p = \frac{e^p_{\text{logit}}}{1+e^p_{\text{logit}} }
+p = \frac{e^{p_{\text{logit}}}}{1+e^{p_{\text{logit}}} }
 $$
