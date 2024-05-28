@@ -11,7 +11,7 @@ Additionally, distribution of *p* will be right-skewed or left-skewed because it
 A logit-transformation first involves calculating the odds (see Chapter 3.3.2.2). Odds are defined as the proportion of participants which fall into a specific category, divided by the proportion of units which do not fall into that category. The natural logarithm function  is then used to transform the odds into a format where *p* = 0.5 equals a value of 0, and where there is no range restriction. This ensures that the sampling distribution is approximately normal and that standard errors are not biased. The calculation of logit-transformed proportions and their standard errors can be done using these formula.
 
 $$
-p_{\text{logit}} = ln \frac{p}{(1-p)} ,	p\in(0,1)
+p_{\text{logit}} = ln \frac{p}{(1-p)}  ,  p\in\text{[0,1]}
 $$
 
 $$
