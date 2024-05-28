@@ -1,2 +1,4 @@
-# Logit-Transform
-What is logit transform
+# What is logit transform?
+
+## Purpose
+For transformation of binary data into continuous value in the range (‑∞,∞)
