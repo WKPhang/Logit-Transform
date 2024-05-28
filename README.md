@@ -13,6 +13,7 @@ A logit-transformation first involves calculating the odds (see Chapter 3.3.2.2)
 $$
 *p*_{\text{logit}} = ln \frac{*p*}{1-*p*)}
 $$
+
 $$
 SE_{p_{\text{logit}}} = \sqrt{\frac{1}{np}+\frac{1}{n(1-p)}}
 $$
