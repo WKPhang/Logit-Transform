@@ -50,3 +50,24 @@ An inverse transform of the logit-transformed *p* will produce sigmoid logistic 
 $$
 p = \frac{e^{p_{\text{logit}}}}{1+e^{p_{\text{logit}}} }
 $$
+
+###
+# Define the logistic function
+def logistic(x):
+    return 1 / (1 + np.exp(-x))
+
+# Generate x values
+z = logistic(y)
+
+# Plot the logistic curve
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, label='logistic(x)', color='blue')
+plt.xlabel('x')
+plt.ylabel('1 / (1 + exp(-x))')
+plt.title('Logistic Curve')
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.legend()
+plt.show()
+```
