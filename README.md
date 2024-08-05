@@ -51,7 +51,7 @@ $$
 p = \frac{e^{p_{\text{logit}}}}{1+e^{p_{\text{logit}}} }
 $$
 
-###
+```
 # Define the logistic function
 def logistic(x):
     return 1 / (1 + np.exp(-x))
