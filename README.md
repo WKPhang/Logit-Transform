@@ -18,6 +18,32 @@ $$
 SE_{p_{\text{logit}}} = \sqrt{\frac{1}{np}+\frac{1}{n(1-p)}}
 $$
 
+### Scripts
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the logit function
+def logit(x):
+    return np.log(x / (1 - x))
+
+# Generate x values from 0.001 to 0.999 to avoid division by zero
+x = np.linspace(0.001, 0.999, 1000)
+y = logit(x)
+
+# Plot the logit curve
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, label='logit(x)', color='blue')
+plt.xlabel('x')
+plt.ylabel('ln(x / (1 - x))')
+plt.title('Logit Curve')
+plt.axhline(0, color='black',linewidth=0.5)
+plt.axvline(0, color='black',linewidth=0.5)
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.legend()
+plt.show()
+```
+
 ## Inverse transform
 An inverse transform of the logit-transformed *p* will produce sigmoid logistic curve and it can be expressed as below.
 
