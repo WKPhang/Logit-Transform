@@ -33,7 +33,7 @@ y = logit(p)
 
 # Plot the logit curve
 plt.figure(figsize=(8, 6))
-plt.plot(x, y, color='blue')
+plt.plot(p, y, color='blue')
 plt.xlabel('p')
 plt.ylabel('logit(p)')
 plt.title('Logit Curve')
