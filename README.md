@@ -27,20 +27,17 @@ import matplotlib.pyplot as plt
 def logit(x):
     return np.log(x / (1 - x))
 
-# Generate x values from 0.001 to 0.999 to avoid division by zero
-x = np.linspace(0.001, 0.999, 1000)
-y = logit(x)
+# Generate p values from 0.001 to 0.999 to avoid division by zero
+p = np.linspace(0.001, 0.999, 1000)
+y = logit(p)
 
 # Plot the logit curve
 plt.figure(figsize=(8, 6))
-plt.plot(x, y, label='logit(x)', color='blue')
-plt.xlabel('x')
-plt.ylabel('ln(x / (1 - x))')
+plt.plot(x, y, color='blue')
+plt.xlabel('p')
+plt.ylabel('logit(p)')
 plt.title('Logit Curve')
-plt.axhline(0, color='black',linewidth=0.5)
-plt.axvline(0, color='black',linewidth=0.5)
 plt.grid(True, linestyle='--', linewidth=0.5)
-plt.legend()
 plt.show()
 ```
 
@@ -61,13 +58,10 @@ z = logistic(y)
 
 # Plot the logistic curve
 plt.figure(figsize=(8, 6))
-plt.plot(x, y, label='logistic(x)', color='blue')
-plt.xlabel('x')
-plt.ylabel('1 / (1 + exp(-x))')
+plt.plot(y, z, label='logistic(x)', color='blue')
+plt.xlabel('logit(p)')
+plt.ylabel('p')
 plt.title('Logistic Curve')
-plt.axhline(0, color='black', linewidth=0.5)
-plt.axvline(0, color='black', linewidth=0.5)
 plt.grid(True, linestyle='--', linewidth=0.5)
-plt.legend()
 plt.show()
 ```
