@@ -22,7 +22,7 @@ Where,
 
 *p* is proportion
 
-$$*p_logit*$$ is logit-transformed proportion
+*$$p_logit$$* is logit-transformed proportion
 
 *n* is sample size
 
