@@ -37,6 +37,8 @@ $$
 
 ## Logit-transformation of skewed data
 
+Lets illustrate the transformation of right-skewed proportion data using a logit function. Here, I generated a proportion data with a right-skewed distribution (Figure 3). This is often encountered when the proportions are close to 0 or 1. By applying a logit transformation, it symmetrize and normalize the distribution of the skewed data, making it more suitable for statistical analysis (Figure 4). Figure 5 represents the relationship between the original proportion values and their logit-transformed counterparts, emphasizing how the transformation moderates the extreme proportions towards a more linear distribution
+
 <div align="center">
 <img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%203.png"/>
 <p><b>Figure 3:</b> Histogram of right-skewed proportion data.</p>
