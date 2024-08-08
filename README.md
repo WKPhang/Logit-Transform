@@ -30,20 +30,24 @@ $$
 p = \frac{e^{p_{\text{logit}}}}{1+e^{p_{\text{logit}}} }
 $$
 
-```
-# Define the logistic function
-def logistic(x):
-    return 1 / (1 + np.exp(-x))
+<div align="center">
+<img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%202.png"/>
+<p><b>Figure 2:</b> Graph of inverse transform of the logit-transformed *p*.</p>
+</div>
 
-# Generate x values
-z = logistic(y)
+## Logit-transformation of skewed data
 
-# Plot the logistic curve
-plt.figure(figsize=(8, 6))
-plt.plot(y, z, label='logistic(x)', color='blue')
-plt.xlabel('logit(p)')
-plt.ylabel('p')
-plt.title('Logistic Curve')
-plt.grid(True, linestyle='--', linewidth=0.5)
-plt.show()
-```
+<div align="center">
+<img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%203.png"/>
+<p><b>Figure 3:</b> Histogram of right-skewed proportion data.</p>
+</div>
+
+<div align="center">
+<img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%204.png"/>
+<p><b>Figure 4:</b> Histogram of logit-transformed right-skewed proportion data.</p>
+</div>
+
+<div align="center">
+<img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%205.png"/>
+<p><b>Figure 5:</b> Logit curve of right-skewed proportion data.</p>
+</div>
