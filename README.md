@@ -18,10 +18,10 @@ $$
 SE_{p_{\text{logit}}} = \sqrt{\frac{1}{np}+\frac{1}{n(1-p)}}
 $$
 
+<div align="center">
 <img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%201.png"/>
-<br>
-Graph of logit transformed proportion data
-<br>
+<p><b>Figure 1:</b> Graph of logit-transformed proportion data.</p>
+</div>
 
 ## Inverse transform
 An inverse transform of the logit-transformed *p* will produce sigmoid logistic curve and it can be expressed as below.
