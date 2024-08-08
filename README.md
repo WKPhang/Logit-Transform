@@ -18,7 +18,7 @@ $$
 SE_{p_{\text{logit}}} = \sqrt{\frac{1}{np}+\frac{1}{n(1-p)}}
 $$
 
-<img src="https://github.com/WKPhang/Logit-Transform/assets/Figure-1.png"/>
+<img src="https://github.com/WKPhang/Logit-Transform/tree/main/assets/Figure-1.png"/>
 Graph of logit transformed proportion data
 
 ## Inverse transform
