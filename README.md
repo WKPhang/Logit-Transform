@@ -11,35 +11,15 @@ Additionally, distribution of *p* will be right-skewed or left-skewed because it
 A logit-transformation first involves calculating the odds. Odds are defined as the proportion of participants which fall into a specific category, divided by the proportion of units which do not fall into that category. The natural logarithm function  is then used to transform the odds into a format where *p* = 0.5 equals a value of 0, and where there is no range restriction. This ensures that the sampling distribution is approximately normal and that standard errors are not biased. The calculation of logit-transformed proportions and their standard errors can be done using these formula.
 
 $$
-p_{\text{logit}} = ln \frac{p}{(1-p)}  ,  p\in[0,1]
+p_{\text{logit}} = ln \frac{p}{(1-p)}  ,  p\in(0,1)
 $$
 
 $$
 SE_{p_{\text{logit}}} = \sqrt{\frac{1}{np}+\frac{1}{n(1-p)}}
 $$
 
-### Scripts
-```
-import numpy as np
-import matplotlib.pyplot as plt
-
-# Define the logit function
-def logit(x):
-    return np.log(x / (1 - x))
-
-# Generate p values from 0.001 to 0.999 to avoid division by zero
-p = np.linspace(0.001, 0.999, 1000)
-y = logit(p)
-
-# Plot the logit curve
-plt.figure(figsize=(8, 6))
-plt.plot(p, y, color='blue')
-plt.xlabel('p')
-plt.ylabel('logit(p)')
-plt.title('Logit Curve')
-plt.grid(True, linestyle='--', linewidth=0.5)
-plt.show()
-```
+<img src="https://github.com/WKPhang/Logit-Transform/assets/Figure-1.png"/>
+Graph of logit transformed proportion data
 
 ## Inverse transform
 An inverse transform of the logit-transformed *p* will produce sigmoid logistic curve and it can be expressed as below.
