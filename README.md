@@ -22,11 +22,11 @@ Where,
 
 $p$ is proportion
 
-$p_logit$ is logit-transformed proportion
+$p_{\text{logit}}$ is logit-transformed proportion
 
 $n$ is sample size
 
-$SE_p_logit$ is standard error of $p_logit$
+$SE_{p_{\text{logit}}}$ is standard error of $p_{\text{logit}}$ 
 
 <div align="center">
 <img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%201.png"/>
