@@ -18,20 +18,21 @@ $$
 SE_{p_{\text{logit}}} = \sqrt{\frac{1}{np}+\frac{1}{n(1-p)}}
 $$
 
+Where,
+
+*p* is proportion
+
+*$p_logit$* is logit-transformed proportion
+
+*n* is sample size
+
+*$SE_p_logit$* is standard error of *p_logit*
+
 <div align="center">
 <img src="https://github.com/WKPhang/Logit-Transform/blob/main/assets/Figure%201.png"/>
 <p><b>Figure 1:</b> Graph of logit-transformed proportion data.</p>
 </div>
 
-Where,
-
-*p* is proportion
-
-*p_logit* is logit-transformed proportion
-
-*n* is sample size
-
-*SE_p_logit* is standard error of *p_logit*
 
 ## Inverse transform
 An inverse transform of the logit-transformed *p* will produce sigmoid logistic curve (Figure 2) and it can be expressed as below.
