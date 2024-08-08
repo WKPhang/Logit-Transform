@@ -38,7 +38,7 @@ $SE_{p_{\text{logit}}}$ is standard error of $p_{\text{logit}}$
 An inverse transform of the logit-transformed *p* will produce sigmoid logistic curve (Figure 2) and it can be expressed as below.
 
 $$
-*p* = \frac{e^{*p_{\text{logit}}*}}{1+e^{*p_{\text{logit}}*} }
+p = \frac{e^{p_{\text{logit}}}}{1+e^{p_{\text{logit}}} }
 $$
 
 <div align="center">
