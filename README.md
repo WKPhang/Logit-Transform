@@ -20,7 +20,7 @@ $$
 
 Where,
 
-$$p$$ is proportion
+$p$ is proportion
 
 $$p_logit$$ is logit-transformed proportion
 
