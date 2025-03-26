@@ -1,4 +1,4 @@
-# What is the Logit Transform?
+# What is Logit Transformation?
 
 ## Purpose
 To transform a proportion value in the range (0,1) into a continuous value in the range (‑∞,∞)
